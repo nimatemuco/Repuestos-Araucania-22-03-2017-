@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@if (ViewBag.displayMenu == "Yes")
+{
+    <h1>Bienvenido Administrador. Usted puede crear roles de usuarios.</h1>
+    <h3>
+        <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+    </h3>
+}
+else
+{
+    <h2>  Bienvenido <strong>@ViewBag.Name</strong> :) . Lugar para adicionar algun módulo. </h2>
+}
